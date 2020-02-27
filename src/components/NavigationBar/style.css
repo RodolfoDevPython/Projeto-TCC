@@ -1,0 +1,56 @@
+nav.NavigationBar ul.describe { 
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+nav.NavigationBar ul.describe li{
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 20pt;
+    color: #da552f;
+    height: 100%;   
+}
+
+nav.NavigationBar ul.describe li:hover {
+    cursor: pointer;    
+    border-bottom: 2px solid;
+    border-bottom-color: lightseagreen;
+}
+
+div.template-button {
+    display: none;
+}
+
+@media only screen and (max-width : 530px) {
+
+    nav.NavigationBar ul.describe {
+        flex-direction: column;
+    }
+
+    nav.NavigationBar ul.describe li { 
+        padding: 10px;
+    }
+
+    div.template-button {
+        background-color: #da552f;       
+        display: flex;
+    }
+
+    div.template-button button {
+        height: 60px;
+        width: 60px;
+        background-image: url("https://img.icons8.com/ios-filled/50/000000/menu-2.png");
+        background-position: center;
+        background-color: transparent;
+        background-size: contain;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+}

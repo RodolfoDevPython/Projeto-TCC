@@ -1,0 +1,219 @@
+p {
+    text-align: justify;
+}
+
+nav.NavBarLogin {
+    display: flex;
+    
+}
+nav.NavBarLogin a {
+    margin: 20px auto 0 auto;
+    border: 2px solid #da552f;
+    border-radius: 5px;
+    height: 40px;
+    width: 30%;
+    text-decoration: none;
+    color: #da552f;
+    text-align: center;
+    padding-top: 10px;
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: #fafafa;
+    color: #da552f;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    max-width: 30%;
+}
+
+div.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20pt;
+    background-color: #da552f;
+    color: white;
+    max-width: 230px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.align-left {
+    display: flex;
+}
+
+div.contents-main { 
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+div#servicos section.content-servico {
+    max-width: 40%;
+}
+
+div#servicos aside {
+    max-width: 55%;
+}
+
+div#servicos aside div {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div#servicos aside figure {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#servicos aside figure img{
+    
+}
+
+div#servicos aside figcaption {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#servicos aside figcaption img.unha {
+    /*margin-left: 200px;    */
+}
+div#servicos aside figcaption img.barba {
+    /*margin-right: 200px;    */
+}
+div#servicos aside figcaption img.corante {
+    /*margin-left: 200px;    */
+}
+
+div.content-como-chegar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.content-como-chegar span {
+    margin-top: 50px;
+    display: flex;
+}
+
+div#como-chegar img{
+    max-width: 50%;
+    border-radius: 50px 200px 50px 200px;
+}
+
+div.content-como-chegar figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.content-como-chegar figcaption {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.content-como-chegar figcaption a {
+    font-size: 15pt !important;
+    color: darksalmon !important;
+}
+div.content-como-chegar figcaption a:hover {
+    font-size: 18pt !important;
+    color: darkseagreen !important;
+    cursor: pointer;
+}
+
+div.content-como-chegar figcaption img {
+    height: auto !important;
+}
+
+div#agendamentos figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div#agendamentos figure figcaption {
+    font-size: 50pt;
+    text-align: center;
+    max-width: 40%;
+}
+div#agendamentos figure img{
+    max-width: 60%;
+    margin-top: 30px;
+    border-radius: 400px 400px 400px 1400px;
+}
+
+
+@media only screen and (max-width: 530px) {
+
+    nav.NavBarLogin {
+        background: #da552f;
+    }
+
+    div#servicos section.content-servico {
+        max-width: 100%;
+    }
+
+    div.contents-main {
+        flex-wrap: wrap;
+    }
+
+    div#servicos aside {
+        max-width: 100%;
+    }
+
+    div#servicos aside figure {
+        flex-wrap: wrap;
+    }
+
+    div#servicos aside figcaption {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    div#servicos aside figcaption img {
+        justify-content: space-around;
+    }
+ 
+    h2 {
+        margin: 0 auto 20px auto
+    }
+
+    div#como-chegar img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    div#agendamentos figure figcaption {
+        max-width: 100%;
+        font-size: 35pt;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }    
+
+    div#agendamentos figure img {
+        max-width: 100%!important;
+    }
+
+}

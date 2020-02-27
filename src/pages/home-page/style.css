@@ -1,0 +1,20 @@
+form.agendamento {
+    max-width: 30%;
+    margin: 80px auto auto auto;
+    display: flex;
+    border: 1px #AAA solid;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 5px 5px 4px rgba(0,0,0, 0.3);
+}
+
+form.agendamento input[type=text] {
+    height: 40px;
+    border: 1px #AAA solid;
+    border-radius: 5px ;
+    margin-top: 20px;
+}
+
+form.agendamento input::placeholder {
+    padding-left: 10px;
+}
