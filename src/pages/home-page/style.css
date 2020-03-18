@@ -1,20 +1,33 @@
-form.agendamento {
-    max-width: 30%;
-    margin: 80px auto auto auto;
+div.template-form {
     display: flex;
-    border: 1px #AAA solid;
-    flex-direction: column;
-    padding: 50px;
-    box-shadow: 5px 5px 4px rgba(0,0,0, 0.3);
+    max-width: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 5%;
+}
+div.template-form .menu-lateral {
+    background: #ddd;
 }
 
-form.agendamento input[type=text] {
-    height: 40px;
-    border: 1px #AAA solid;
-    border-radius: 5px ;
+.menu-lateral > ul {
+    list-style: none;
+    background-color: blue;
+}
+
+.menu-lateral > ul > li {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    padding: 0px 20px 0px 20px;
     margin-top: 20px;
+    background: chartreuse;
+    align-items: center;
+    justify-content: center;
+    font-size: 15pt;
+    color: #AAA;
 }
-
-form.agendamento input::placeholder {
-    padding-left: 10px;
+.menu-lateral > ul > li:hover {
+    font-size: 18pt;
 }

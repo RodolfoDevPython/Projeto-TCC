@@ -1,0 +1,33 @@
+nav.NavBarLogin {
+    display: flex;
+    
+}
+nav.NavBarLogin button {
+    margin: 20px auto 0 auto;
+    width: 30%;
+    text-decoration: none;
+    color: #da552f;
+    text-align: center;
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: #fafafa;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    max-width: 30%;
+}
+
+nav.NavBarLogin button:hover {
+    color: white;
+    background-color: #da552f;
+}
+
+nav.NavBarLogin button:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}

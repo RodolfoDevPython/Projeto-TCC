@@ -1,0 +1,23 @@
+div#agendamentos figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div#agendamentos figure figcaption {
+    font-size: 50pt;
+    display: flex;
+    text-align: center;
+    max-width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#agendamentos figure img{
+    max-width: 60%;
+    margin-top: 30px;
+    border-radius: 400px 400px 400px 1400px;
+}
+.agenda:hover {
+   cursor: pointer;
+}

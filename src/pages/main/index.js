@@ -1,72 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Buttons from "../../components/buttons";
 import NavigationBar from "../../components/NavigationBar";
 import Carrossel from "../../components/carrossel";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
+import ContainerServico from "../../components/container-servico";
+import ContainerAgenda from "../../components/container-agenda";
 
 import "./style.css";
-
+import { useSelector } from "react-redux";
 
 export default function Main() {
-    /**/
-    function handleImagens(elem) {
-        
+    /*Parte de serviços */
+    const rdx_login = useSelector( state => state.login);
+
+    function ShowDivs(elem){
+        console.log(elem)
     }
+    
+    console.log(rdx_login)
 
     return (
         <>
-            <Header />
-            <nav className="NavBarLogin">
-                <Link to={"/login"}> Login </Link> 
-                <Link to={"/cadastro"}> Cadastro </Link>          
-            </nav>
+            {
+             !rdx_login.login_ok ? <Buttons /> : null
+            }
+            
             <NavigationBar/>
             <Carrossel />
             
             <div className="main">
-                <div id="servicos" className="align-left contents-main">
-                    <section className="content-servico">
-                        <h2 className="servico" >Serviços</h2>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>    
-                    </section>
-                    
-                    <aside>
-                        <div>
-                            <figure>
-                                <img src="secretaria.jpg" />
-                                <figcaption>
-                                    <img className="unha" src="unha.png" height="100" /> 
-                                    <img className="barba" src="barbeiro.png" height="100" />
-                                    <img className="corante" src="corante.png" height="100" />
-                                </figcaption>
-                            </figure>
-                            <h3>Imagens</h3>
-                            
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                        </div>
-                    </aside>
-                    <a hidden name="servico"></a>
-                </div>
-
-                <div id="agendamentos" className="align-left contents-main">
-                    <a hidden name="agendamentos"></a>
-                    <div>
-                        <h2 className="agendamentos" >Agendamentos</h2>
-                        <figure>
-                            <figcaption>
-                                faça o seu Agendamento
-                                <img src="create-agendamento.gif" />
-                            </figcaption>    
-
-                            <img src="agendamento.png" /> 
-                        </figure>                
-                    </div>
-                </div>
+                <ContainerServico />
+                
+                <ContainerAgenda />
                 
                 <div id="como-chegar" className="align-left contents-main">
                     <a hidden name="como-chegar"></a>
@@ -85,7 +50,6 @@ export default function Main() {
                         
                     </div>
                 </div>
-
                 <div id="quem-somos" className="align-left contents-main">
                     <a hidden name="quem-somos"></a>
                     <div>
@@ -96,7 +60,7 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-            <Footer />
+          
         </>
     );
 } 

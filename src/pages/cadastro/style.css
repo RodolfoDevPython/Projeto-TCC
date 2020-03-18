@@ -39,15 +39,13 @@ form.FormCadastro input[type="button"]:hover {
 }
 
 form.FormCadastro a {
-    margin: 20px auto 0 auto;
+    margin: 20px auto ;
     border: 2px solid #da552f;
     border-radius: 5px;
-    height: 40px;
-    width: 30%;
     text-decoration: none;
     color: #da552f;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 50px;
 } 
 form.FormCadastro a:hover{
     background: #da552f;

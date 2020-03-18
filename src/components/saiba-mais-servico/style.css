@@ -1,0 +1,31 @@
+section.saiba-mais {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.saiba-mais h2 {
+    text-align: center;
+}
+
+div.lista-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /*display: grid;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);*/
+}
+
+div.lista-servicos figure img {
+    width: 125px;
+}
+
+div.lista-servicos figure {
+    margin: 0 15px 30px 0;
+    background: #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}

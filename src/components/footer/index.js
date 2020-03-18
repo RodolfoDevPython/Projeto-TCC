@@ -7,7 +7,12 @@ export default function Footer(){
     return(
         <>
             <footer>
-                Espaço salão
+                <section>
+                    conteudo da section na esquerda
+                </section>
+                <aside>
+                conteudo da aside na direita
+                </aside>
             </footer>
         </>
     );

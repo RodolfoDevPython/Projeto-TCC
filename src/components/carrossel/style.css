@@ -1,3 +1,16 @@
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel a {
+    background: #ddd;
+}
+
+.carousel-inner {
+    width: 70% !important;
+}
 .carousel-item img {
     height: 450px;
 }

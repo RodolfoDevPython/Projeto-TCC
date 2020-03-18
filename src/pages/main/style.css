@@ -2,41 +2,23 @@ p {
     text-align: justify;
 }
 
-nav.NavBarLogin {
-    display: flex;
-    
-}
-nav.NavBarLogin a {
-    margin: 20px auto 0 auto;
-    border: 2px solid #da552f;
-    border-radius: 5px;
-    height: 40px;
-    width: 30%;
-    text-decoration: none;
-    color: #da552f;
-    text-align: center;
-    padding-top: 10px;
-    height: 42px;
-    border-radius: 5px;
-    border: 2px solid #da552f;
-    background: #fafafa;
-    color: #da552f;
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.8s;
-    max-width: 30%;
-}
-
 div.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 8%;
     padding-right: 8%;
+}
+div.main > div  {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+} 
+div.main > div:hover {
+    opacity: 1 !important;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    transition-timing-function: ease;
 }
 
 h2 {
@@ -58,50 +40,10 @@ div.align-left {
 
 div.contents-main { 
     height: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     justify-content: space-between;
 
-}
-
-div#servicos section.content-servico {
-    max-width: 40%;
-}
-
-div#servicos aside {
-    max-width: 55%;
-}
-
-div#servicos aside div {
-    border: 2px solid #ddd;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-div#servicos aside figure {
-    display: flex;
-    justify-content: space-between;
-}
-
-div#servicos aside figure img{
-    
-}
-
-div#servicos aside figcaption {
-    display: flex;
-    align-items: center;    
-    flex-direction: column;
-    justify-content: center;
-}
-
-div#servicos aside figcaption img.unha {
-    /*margin-left: 200px;    */
-}
-div#servicos aside figcaption img.barba {
-    /*margin-right: 200px;    */
-}
-div#servicos aside figcaption img.corante {
-    /*margin-left: 200px;    */
 }
 
 div.content-como-chegar {
@@ -147,25 +89,11 @@ div.content-como-chegar figcaption img {
     height: auto !important;
 }
 
-div#agendamentos figure {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-div#agendamentos figure figcaption {
-    font-size: 50pt;
-    text-align: center;
-    max-width: 40%;
-}
-div#agendamentos figure img{
-    max-width: 60%;
-    margin-top: 30px;
-    border-radius: 400px 400px 400px 1400px;
-}
-
-
 @media only screen and (max-width: 530px) {
+
+    div.main > div {
+        opacity: 1 !important;
+    }
 
     nav.NavBarLogin {
         background: #da552f;

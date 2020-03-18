@@ -1,0 +1,56 @@
+div#servicos section.content-servico {
+    max-width: 40%;
+}
+
+div#servicos aside {
+    max-width: 55%;
+}
+
+div#servicos aside div {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+div#servicos aside figure {
+    display: flex;
+    justify-content: space-between;
+}
+
+div#servicos aside figure img{
+    
+}
+
+div#servicos aside figcaption {
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+div#servicos aside figcaption img.unha {
+    /*margin-left: 200px;    */
+}
+div#servicos aside figcaption img.barba {
+    /*margin-right: 200px;    */
+}
+div#servicos aside figcaption img.corante {
+    /*margin-left: 200px;    */
+}
+
+div#servicos aside div button {
+    border: #da552f;
+    border-style: dashed;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #da552f;
+}
+
+section.saiba-mais {
+    transition: opacity 4s ease-out;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
