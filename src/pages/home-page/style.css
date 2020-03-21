@@ -31,3 +31,9 @@ div.template-form .menu-lateral {
 .menu-lateral > ul > li:hover {
     font-size: 18pt;
 }
+
+div.container-frms {
+    border: 1px #AAA solid;
+    padding: 50px;
+    box-shadow: 5px 5px 4px rgba(0,0,0, 0.3);
+}

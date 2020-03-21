@@ -1,10 +1,19 @@
+div#template-frm-funcio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 div#grid-funcionarios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    background-color: white;
 }
+
 div#grid-funcionarios > div.itens {
     background-color: turquoise;
     width: 100%;
     color: white;
+    text-align: center;
 }

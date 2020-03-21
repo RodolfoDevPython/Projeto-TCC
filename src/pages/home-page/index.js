@@ -76,11 +76,11 @@ export default function HomePage(params) {
 
                     </ul>
                 </nav>
-
-                { frmServico ? <FormServico /> : null }
-                { frmFuncionario ? <FormFuncionario /> : null }
-                { frmDataHora ? <FormDataHora /> : null }
-                
+                <div className="container-frms" >
+                    { frmServico ? <FormServico /> : null }
+                    { frmFuncionario ? <FormFuncionario /> : null }
+                    { frmDataHora ? <FormDataHora /> : null }
+                </div>
             </div>
         </>
     );

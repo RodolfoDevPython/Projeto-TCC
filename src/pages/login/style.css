@@ -18,7 +18,7 @@ form.FormLogin input[type="text"] {
 }
 
 
-input[type="button"] { 
+form.FormLogin input[type="button"] { 
     height: 50px;
     border-radius: 5px;
     border: 2px solid #da552f;
@@ -30,7 +30,7 @@ input[type="button"] {
     transition: all 0.8s;
     margin-top: 40px;
 }
-input[type="button"]:hover {
+form.FormLogin input[type="button"]:hover {
     background: #da552f;
     color: white;
     cursor: pointer;
